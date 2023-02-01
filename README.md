@@ -28,6 +28,9 @@ git clone https://github.com/sreenidhiramachandran/wordpress_deployment_using_do
 ## Using the below command, we can create and start all the services from your configuration.
 
 docker-compose up -d
+![image](https://user-images.githubusercontent.com/120683482/216144928-6e9bd0f9-0de9-4452-8001-0db453d3e357.png)
+
+
 
 ![image](https://user-images.githubusercontent.com/120683482/216144687-5ebef4a7-11b9-4219-ad09-37dc03f9b90b.png)
 
