@@ -13,6 +13,8 @@ Step 2:
 
 Download the necessary files from github and provide execute privileges sudo curl -SL https://github.com/docker/compose/releases/download/v2.6.0/docker-compose-linux-x86_64 -o /usr/bin/docker-compose sudo chmod +x /usr/bin/docker-compose
 
+![image](https://user-images.githubusercontent.com/120683482/216142950-0e740b9f-9a9d-46c7-9039-54a24c26ac5c.png)
+
 We can then use the following command to see the compose version. 
 
 docker-compose version
