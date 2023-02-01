@@ -29,4 +29,8 @@ git clone https://github.com/sreenidhiramachandran/wordpress_deployment_using_do
 
 docker-compose up -d
 
+![image](https://user-images.githubusercontent.com/120683482/216144687-5ebef4a7-11b9-4219-ad09-37dc03f9b90b.png)
+
+
+
 ![image](https://user-images.githubusercontent.com/120683482/216141018-44a46ea4-ae57-4ee3-9f43-64dd7c898071.png)
