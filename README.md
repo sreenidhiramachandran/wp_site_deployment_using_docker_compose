@@ -25,7 +25,8 @@ mkdir wp-project; cd wp-project;
 Download the project files into your local machine using the below command.
 git clone https://github.com/sreenidhiramachandran/wordpress_deployment_using_docker_compose.git
 
-## Run the below command
+## Using the below command, we can create and start all the services from your configuration.
+
 docker-compose up -d
 
 ![image](https://user-images.githubusercontent.com/120683482/216141018-44a46ea4-ae57-4ee3-9f43-64dd7c898071.png)
