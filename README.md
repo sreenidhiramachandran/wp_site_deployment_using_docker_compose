@@ -16,7 +16,7 @@ sudo usermod -a -G docker ec2-user
 ```
 
 
-## Step 2: Install Compose
+## Step 2: Install Docker Compose
 
 Download the necessary files from github and provide execute privileges 
 ```sh
