@@ -30,15 +30,61 @@ We can then use the following command to display the version information of Dock
 docker-compose version
 ```
 
-## Step 3: Create a project directory and download the project files
+## Step 3: Create a project directory and download the docker compose file.
 
 ```sh
 mkdir wp-project; cd wp-project; 
 ```
 
-Download the project files into your local machine using the below command.
+### Download the project files to your local machine using the below command.
 ```sh
 git clone https://github.com/sreenidhiramachandran/wp_site_deployment_using_docker_compose.git
+```
+### Or Create a compose file manually.
+```sh
+vim docker-compose.yml
+```
+```sh
+services:
+
+  database:
+    image: mysql:5.6
+    container_name: wp_database
+    restart: always
+    networks:
+      - wp-network
+    volumes:
+      - mysql-vol:/var/lib/mysql/
+    environment:
+      - MYSQL_ROOT_PASSWORD=mysqlroot123
+      - MYSQL_DATABASE=wordpressdb
+      - MYSQL_USER=wordpressuser
+      - MYSQL_PASSWORD=wordpresspwd123
+
+  wordpress:    
+    image: wordpress:latest
+    container_name: wordpress
+    restart: always
+    networks:
+      - wp-network
+    volumes:
+      - wp-vol:/var/www/html/
+    ports:
+      - "80:80"
+    environment:
+      - WORDPRESS_DB_HOST=wp_database
+      - WORDPRESS_DB_USER=wordpressuser
+      - WORDPRESS_DB_PASSWORD=wordpresspwd123
+      - WORDPRESS_DB_NAME=wordpressdb
+
+
+networks:
+  wp-network:
+
+    
+volumes:
+  mysql-vol:
+  wp-vol:
 ```
 
 ## Step 4: Start the services defined in the Docker Compose file
